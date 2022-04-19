@@ -1,6 +1,7 @@
 <template>
   <h1>Home</h1>
-  <p class="typewriter">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore corporis, voluptas cum officia nulla consequatur.</p>
+  <p >{{ $t('message.brief') }}</p>
+  <p>Test</p>
 </template>
 
 <script>
