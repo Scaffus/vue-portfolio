@@ -1,30 +1,46 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <HeaderComponent />
+  <router-view />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import HeaderComponent from "@/components/HeaderComponent.vue";
 
-#nav {
-  padding: 30px;
+export default {
+  components: {
+    HeaderComponent,
+  },
+};
+</script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+<style lang="sass">
+@use './scss/_fonts.scss'
+@use './scss/_colors.scss'
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200&family=Mulish:wght@300&family=Roboto:wght@300&family=Rubik:wght@300&display=swap')
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+*
+  font-family: 'JetBrains Mono', monospace
+  color: fonts.$primary
+
+body
+  background-color: colors.$bg-primary
+
+// ? Container
+.container
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+@media (min-width: 768px)
+  .container
+    width: 750px
+
+@media (min-width: 992px)
+  .container
+    width: 970px
+
+@media (min-width: 1200px)
+  .container
+    width: 1170px
 </style>
