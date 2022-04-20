@@ -10,6 +10,14 @@ export default {
   components: {
     HeaderComponent,
   },
+  created() {
+    if (localStorage.getItem('lang') == null) {
+      localStorage.setItem('lang', 'en');
+      return;
+    }
+    this.$i18n.locale = localStorage.getItem('lang')
+    return;
+  }
 };
 </script>
 

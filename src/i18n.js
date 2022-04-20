@@ -32,7 +32,7 @@ function loadLocaleMessages() {
     'en' : require('./locales/en.json'),
     'fr' : require('./locales/fr.json')
   }
-  console.log(messages)
+
   return messages
 }
 
