@@ -1,6 +1,15 @@
 {
-    "message": {
+    "presentation": {
         "brief": "Bonjour! Je suis Lucien, un apprenti développeur.",
         "long": "Je développe depuis 6ans maintenant. J'ai commencé à l'âge de 10ans quand j'ai eu mon premier ordinateur etc..."
+    },
+    "projects": {
+      "intro": "J'aime jouer avec les différents languages et voir ce que je peux faire avec, voici quelques un de mes projets.",
+      "angular": {
+        "context": "J'ai fais cette application avec le framework Angular durant un stage à <a href=\"https://www.antemeta.fr/\" target=\"blank\">Antemeta</a> en 5 jours pendant l'été 2021."
+      },
+      "python": {
+          "context": "Bon bah là c'est la sauce, j'ai host aucun projet en python"
+      }
     }
 }

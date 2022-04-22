@@ -1,6 +1,17 @@
 {
-  "message": {
+  "presentation": {
     "brief": "Hi! I'm Lucien, an apprentice developer.",
     "long": "I've been coding for 6years now. I started at age 10 when I got my first computer etc..."
+  },
+  "projects": {
+    "intro": "I like to fiddle around with any language and see what I can do with it, here are a few of my projects",
+    "angular": {
+      "framework": "Angular",
+      "context": "I made this webapp with the Angular framework during an internship at <a href=\"https://www.antemeta.fr/\" target=\"blank\">Antemeta</a> in 5 days in summer 2021."
+    },
+    "python": {
+      "framework": "Flask",
+      "context": "Well, this is bad, I havent hosted any python project"
+    }
   }
 }

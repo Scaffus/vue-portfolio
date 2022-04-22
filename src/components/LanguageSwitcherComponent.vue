@@ -10,7 +10,7 @@
             <img src="../assets/flags/en.svg" alt="UK Flag">
         </option> -->
   <!-- </select> -->
-  <Button @btn-click="switchLanguage()" :class="['flag ' + lang]"/>
+  <ButtonComponent @btn-click="switchLanguage()" :class="['flag ' + lang]"/>
   <!-- <button :value="lang" @onclick="switchLanguage()" >
     <img
       v-if="lang == 'fr'"
@@ -28,11 +28,11 @@
 </template>
 
 <script>
-import Button from "@/components/Button.vue";
+import ButtonComponent from "@/components/ButtonComponent.vue";
 
 export default {
   components: {
-    Button
+    ButtonComponent
   },
   data() {
     return {

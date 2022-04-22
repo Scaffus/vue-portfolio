@@ -1,6 +1,8 @@
 <template>
-  <HeaderComponent />
-  <router-view />
+  <div style="position: relative">
+    <HeaderComponent />
+    <router-view />
+  </div>
 </template>
 
 <script>
@@ -11,13 +13,13 @@ export default {
     HeaderComponent,
   },
   created() {
-    if (localStorage.getItem('lang') == null) {
-      localStorage.setItem('lang', 'en');
+    if (localStorage.getItem("lang") == null) {
+      localStorage.setItem("lang", "en");
       return;
     }
-    this.$i18n.locale = localStorage.getItem('lang')
+    this.$i18n.locale = localStorage.getItem("lang");
     return;
-  }
+  },
 };
 </script>
 
@@ -39,6 +41,17 @@ body
   padding-left: 15px
   margin-right: auto
   margin-left: auto
+  margin-top: 3em
+
+// @for $i from 1 to 6
+//   h#{$i}:before
+//     content: '<h#{$i}>'
+
+//   h#{$i}:after
+//     content: '<h#{$i}/>'
+
+*
+  animation: ez .5s
 
 @media (min-width: 768px)
   .container
@@ -51,4 +64,10 @@ body
 @media (min-width: 1200px)
   .container
     width: 1170px
+
+@keyframes ez
+  0%
+    opacity: 0%
+  100%
+    opacity: 100%
 </style>
